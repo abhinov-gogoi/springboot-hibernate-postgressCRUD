@@ -22,6 +22,7 @@ public class EmployeeController {
 
     // CRUD Operations ( create, read, update, delete)
     //get allEmployees
+
     @GetMapping("/employees")
     public List<Employee> getAllEmployee() {
         return this.employeeRepository.findAll();
@@ -65,6 +66,4 @@ public class EmployeeController {
         response.put("deleted", Boolean.TRUE);
         return response;
     }
-
-
 }

@@ -2,10 +2,16 @@ package com.example.springboot.exception;
 
 import java.util.Date;
 
-public class ErrorHandling {
+public class ErrorDetails {
     private Date timestamp;
     private String details;
     private String message;
+
+    public ErrorDetails(Date timestamp, String details, String message) {
+        this.timestamp = timestamp;
+        this.details = details;
+        this.message = message;
+    }
 
     public Date getTimestamp() {
         return timestamp;
